@@ -13,7 +13,7 @@ app.get('/category',(req,res)=>{
 
 });
 app.listen(port,()=>{
-    console.log(`chef api is coming on port:${port}`)
+    console.log(`chef api is  on port:${port}`)
 })
 
 app.listen()
