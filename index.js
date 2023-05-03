@@ -12,8 +12,14 @@ app.get('/category',(req,res)=>{
     res.send(categories);
 
 });
+
+app.get('/category/:id',(req,res)=>{
+    const id =req.params.id;
+    const item=categories.find((pd)=>pd.id==id)
+   res.send(item);
+});
 app.listen(port,()=>{
-    console.log(`chef api is  on port:${port}`)
+    console.log(`chef api is   port:${port}`)
 })
 
 app.listen()
