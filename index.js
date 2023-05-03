@@ -19,7 +19,7 @@ app.get('/category/:id',(req,res)=>{
    res.send(item);
 });
 app.listen(port,()=>{
-    console.log(`chef api is   port:${port}`)
+    console.log(`chef api is running port:${port}`)
 })
 
 app.listen()
